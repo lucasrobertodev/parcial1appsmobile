@@ -27,7 +27,7 @@ export default function LoginScreen({ navigation }) {
     // 2. Convertimos el texto guardado de vuelta a un objeto JavaScript
     const registeredUser = JSON.parse(savedData);
 
-    // 3. Validamos que coincidan EXACTAMENTE los datos ingresados con los guardados[cite: 5]
+    // 3. Validamos que coincidan EXACTAMENTE los datos ingresados con los guardados
     if (username === registeredUser.username && password === registeredUser.password) {
       // Login exitoso: creamos la sesión
       await AsyncStorage.setItem('userSession', username);
