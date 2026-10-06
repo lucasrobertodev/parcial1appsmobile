@@ -7,7 +7,7 @@ const TaskItem = ({ task, onDelete }) => {
       {/* Agregamos testID="task-text" para que Jest lo encuentre */}
       <Text style={styles.taskText} testID="task-text">{task}</Text>
 
-      {/* Agregamos testID="delete-button"[cite: 1] */}
+      {/* Agregamos testID="delete-button" */}
       <TouchableOpacity onPress={onDelete} style={styles.deleteButton} testID="delete-button">
         <Text style={styles.deleteText}>X</Text>
       </TouchableOpacity>
